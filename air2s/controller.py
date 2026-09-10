@@ -1,4 +1,4 @@
-import socket
+﻿import socket
 import cv2
 
 class Air2SException(RuntimeError):
@@ -44,7 +44,7 @@ class Air2S:
         self._send('takeoff')
 
     def land(self):
-        self._send('land')
+        self._save('land')
 
     def emergency(self):
         self._send('emergency')
